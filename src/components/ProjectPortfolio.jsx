@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "font-awesome/css/font-awesome.min.css";
 import "../stylesheets/ProjetcPortfolio.css";
-import PortfolioMockup from "../Images/PortfolioMockup.jpg";
+import PortfolioHighFi from "../Images/PortfolioHighFi.png";
+import PortfolioWireframes from "../Images/PortfolioWireframes.jpg";
 
 function ProjectPortfolio() {
   return (
@@ -50,7 +51,7 @@ function ProjectPortfolio() {
         </div>
 
         <div>
-          <img src={PortfolioMockup} className="image-portfolio-mockup" />
+          <img src={PortfolioHighFi} className="image-portfolio-mockup" />
         </div>
         <div>
           <div className="portfolio-text-container">
@@ -86,7 +87,6 @@ function ProjectPortfolio() {
           </div>
 
           {/* Project - Section 2 */}
-
           <div className="portfolio-text-container">
             <div className="phase-text">
               <h2>Methods</h2>
@@ -117,25 +117,44 @@ function ProjectPortfolio() {
           </div>
 
           {/* Project - Section 3 */}
-
           <div className="portfolio-text-container">
             <div className="phase-text">
               <h2>Design</h2>
             </div>
 
             <div className="phase-text">
-              <h2>High-fi Prototype</h2>
+              <h2>Prototype</h2>
               <p>
-                I did a few frames of low-fidelity testing, but I quickly
-                switched to brainstorming and iterating with high-fidelity
-                designs. The testing happened more amongst my team members and
-                teachers, with some A/B and Brand testing methods.
+                I did a quite a lot of brainstorming on paper prototype, then
+                quickly switched to iterating with high-fidelity designs. The
+                testing happened more amongst my team members and teachers, with
+                some A/B and Brand testing methods.
               </p>
             </div>
           </div>
 
-          {/* Project - Section 4 */}
+          <img src={PortfolioWireframes} className="image-portfolio-mockup" />
 
+          {/* Project - Section 4 */}
+          <div className="portfolio-text-container">
+            <div className="phase-text">
+              <h2>Coding</h2>
+            </div>
+
+            <div className="phase-text">
+              <h2>With React</h2>
+              <p>
+                As soon as I started implementing my portfolio during week 3 I
+                realized that the design doesn't click together on the
+                application and overall I wasn't really happy with how it turned
+                out. I had to do more thinking about what exactly went wrong,
+                and after fixing some information architecture and general
+                design layout I was more content with the design.
+              </p>
+            </div>
+          </div>
+
+          {/* Project - Section 5 */}
           <div className="portfolio-text-container">
             <div className="phase-text">
               <h2>Conclusion</h2>
@@ -147,20 +166,14 @@ function ProjectPortfolio() {
                 question
               </h2>
               <p>
-                As soon as I started implementing my portfolio during week 3 I
-                realized that the design doesn't click together on the
-                application and overall I wasn't really happy with how it turned
-                out. I had to do more thinking about what exactly went wrong,
-                and after fixing some information architecture and general
-                design layout I was more content with the design. In conclusion,
-                I proved to myself that spending too much time prototyping on
-                Figma is not the best approach, but getting my hands dirty and
-                starting with the front-end implementation - only then I can
-                face the most realistic problems and fix them right there. I
-                think that the first version of my portfolio turned out quite
-                well and I managed to implement what I had imagined. I believe
-                that I built a good branding of myself by expressing my talents
-                and passions.
+                In conclusion, I proved to myself that spending too much time
+                prototyping on Figma is not the best approach, but getting my
+                hands dirty and starting with the front-end implementation -
+                only then I can face the most realistic problems and fix them
+                right there. I think that the first version of my portfolio
+                turned out quite well and I managed to implement what I had
+                imagined. I believe that I built a good branding of myself by
+                expressing my talents and passions.
               </p>
             </div>
           </div>
