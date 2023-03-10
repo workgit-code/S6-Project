@@ -1,0 +1,80 @@
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.profile-image {
+  /* width: 500px; */
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-top: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+p {
+  /* margin-top: 20px; */
+  color: #9f9a9a;
+}
+
+.fa-arrow-down {
+  margin-bottom: auto;
+}
+
+.my-services-container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-services-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+}
+
+.about-title {
+  margin: 0;
+}
+
+.service {
+  text-align: left;
+  max-width: 20%;
+}
+
+/* ***************************** */
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 300px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 20px;
+  text-align: left;
+}
