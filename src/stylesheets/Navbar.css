@@ -1,30 +1,49 @@
 .NavbarItems {
-  display: flex;
-  align-items: space-between;
-  align-items: center;
-  /* background-color: black; */
+  /* display: flex;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
   height: 60px;
   border-radius: 70px;
   position: fixed;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   top: 10px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%); */
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  background-color: white;
+  box-shadow: none;
+  transition: box-shadow 0.3s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.medium {
+  font-size: 32px;
+}
+
+.NavbarItems.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Add any other styles you need for a sticky navbar */
 }
 
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 150px;
+  grid-gap: 50px;
   padding: 0;
-  padding-right: 64px;
-  padding-left: 64px;
+  padding-right: 170px;
+  padding-left: 170px;
   list-style: none;
-  align-items: center;
+  /* align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: center; */
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-links {
@@ -47,7 +66,7 @@ li {
 
 @media screen and (max-width: 850px) {
   .NavbarItems {
-    width: 70%;
+    /* width: 70%; */
     z-index: 99;
   }
 
@@ -79,4 +98,16 @@ li {
   .menu-icons {
     display: block;
   }
+}
+
+.goToTopButton {
+  position: fixed;
+  /* display: flex;
+  justify-content: flex-end; */
+  height: 40px;
+  width: 40px;
+  /* right: 10; */
+  /* bottom: 50; */
+  color: white;
+  background-color: black;
 }

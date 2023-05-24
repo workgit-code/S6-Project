@@ -1,6 +1,6 @@
-.container {
+.container.main-text {
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .title {

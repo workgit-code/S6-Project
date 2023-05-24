@@ -1,77 +1,66 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Reveal from "react-reveal/Reveal";
 import "font-awesome/css/font-awesome.min.css";
+import PortfolioHighFiFigma from "../Images/PortfolioHighFiFigma.png";
 import GroupProjectImage from "../Images/GroupProjectImage.png";
+import InternationaWeek from "../Images/InternationaWeek.png";
 import "../stylesheets/Projects.css";
 
 function Projects() {
   return (
-    <div className="main-div">
-      {/* Project 1 */}
-      <div className="container">
-        <Link
-          to="/myportfolio"
-          style={{ color: "inherit", textDecoration: "none" }}
-        >
-          <div className="container-project">
-            <div className="container-text">
-              <Reveal effect="fadeInUp">
-                <h1 className="project-title">My portfolio design</h1>
-              </Reveal>
-              <p className="project-description">
-                An individual project of 4 weeks for building my portfolio
-              </p>
-              <div className="project-keywords">
-                <ul>
-                  <li>Researching</li>
-                  <li> UI/ UX Design</li>
-                  <li>React.js</li>
-                </ul>
-              </div>
-            </div>
-            <div className="container-image">
-              <img src={GroupProjectImage} className="image-project" />
-            </div>
+    <div className="main-container">
+      {/* FIRST PROJECT */}
+      <Link
+        to="/myportfolio"
+        style={{ color: "inherit", textDecoration: "none" }}
+      >
+        <div className="project-container">
+          <div className="overview-text-content">
+            <h1>My portfolio design</h1>
+            <p className="project-description">
+              An individual project of 4 weeks for building my portfolio
+            </p>
           </div>
-        </Link>
-
-        {/* Project 2 */}
-        <div className="container-project">
-          <div className="container-image">
-            <img src={GroupProjectImage} className="image-project" />
-          </div>
-          <div className="container-text">
-            <h1>Making compliments</h1>
-            <p className="project-description">Will be added in the future</p>
-            <div className="read-case">
-              {/* <ul className="project-keywords">
-                <li>Researching</li>
-                <li> UI/ UX Design</li>
-                <li>Front-end developement</li>
-              </ul> */}
-            </div>
+          <div className="overview-image-content">
+            <img src={PortfolioHighFiFigma} className="image-project" />
           </div>
         </div>
+      </Link>
 
-        {/* Project 3*/}
-        <div className="container-project">
-          <div className="container-text">
-            <h1>International project</h1>
-            <p className="project-description">Will be added in the future</p>
-            <div className="read-case">
-              {/* <ul className="project-keywords">
-                <li>Researching</li>
-                <li> UI/ UX Design</li>
-                <li>Front-end developement</li>
-              </ul> */}
-            </div>
+      {/* SECOND PROJECT */}
+      <Link
+        to="/groupproject"
+        style={{ color: "inherit", textDecoration: "none" }}
+      >
+        <div className="project-container">
+          <div className="overview-text-content">
+            <h1>Group Project: Onboarding</h1>
+            <p className="project-description">
+              How to attract & retain international employees at Simac?
+            </p>
+            &#128073;
           </div>
-          <div className="container-image">
+          <div className="overview-image-content">
             <img src={GroupProjectImage} className="image-project" />
           </div>
         </div>
-      </div>
+      </Link>
+
+      {/* THIRD PROJECT */}
+      <Link
+        to="/myportfolio"
+        style={{ color: "inherit", textDecoration: "none" }}
+      >
+        <div className="project-container">
+          <div className="overview-text-content">
+            <h1>Dutch design charrette</h1>
+            <p className="project-description"></p>
+          </div>
+          <div className="overview-image-content">
+            <img src={InternationaWeek} className="image-project" />
+          </div>
+        </div>
+      </Link>
     </div>
   );
 }

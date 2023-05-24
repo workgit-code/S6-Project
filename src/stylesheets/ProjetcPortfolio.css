@@ -1,112 +1,120 @@
-.container-project-portfolio {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 70px;
+  gap: 40px;
   width: 100%;
-  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.dynamic-navigation {
+.text-container.highlighted {
+  background-color: aliceblue;
+  border-radius: 15px;
+  margin: 0 2rem;
+  padding: 20px 0;
+}
+
+.project-title {
+  font-size: 37px;
+  margin: 0 2rem;
+  text-align: left !important;
+  margin-bottom: 20px;
+}
+
+.contents-headline {
+  margin: 0 2rem;
+  margin-bottom: 20px;
+  text-align: left !important;
+}
+
+.stage-title {
+  font-size: 27px;
+  margin: 0 2rem;
+  margin-bottom: 20px;
+  text-align: left !important;
+}
+
+.stage-explanation-text {
+  text-align: justify;
+  margin: 0 2rem;
+  margin-top: 0px !important;
+  line-height: 35px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.stage-explanation-text.left-border {
+  border-left: 3px solid black;
+  padding: 20px 20px;
+}
+
+.image-portfolio {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  margin: 0 2rem;
+  max-width: 100%;
+}
+.bulletpoints {
+  list-style-type: none;
+  line-height: 45px;
+  margin: 0 3rem;
+  text-align: left !important;
+}
+
+.contents-of-the-page {
+  list-style-type: none;
+  text-align: left !important;
+}
+
+.contents-of-the-page-li {
+  border-left: 3px solid black;
+  padding-left: 10px;
+  height: 30px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  color: black;
+  text-align: left !important;
+}
+
+.contents-of-the-page-li:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list-item {
+  list-style: initial;
+}
+
+.goToTopButton {
   position: fixed;
-  top: 50%;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.project-title-details {
-  margin-top: 200px;
-  margin-bottom: 0px;
-  min-width: 60%;
+.goToTopButton:hover {
+  background-color: #333;
 }
 
-.title-placeholder {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 150px;
-  gap: 10px;
+.goToTopButton h2 {
+  margin: 0;
+  font-size: 16px;
 }
 
-.introduction-text {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
-  margin-left: 150px;
-  margin-right: 150px;
-  text-align: left;
+.goToTopButton.show {
+  opacity: 1;
 }
 
-.methods {
-  margin-top: 10px;
-}
-
-.intro-text-1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.intro-text-2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.side-navigation {
-  transform: rotate(-90deg);
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin-left: -150px;
-}
-
-.paragraph {
-  max-width: 70%;
-}
-
-.image-portfolio-mockup {
-  /* width: auto;
-  height: 400px; */
-  width: 70%;
-  margin-top: 70px;
-}
-
-.portfolio-text-container {
-  display: flex;
-  flex-direction: row;
-  /* margin-left: 150px; */
-  gap: 150px;
-  justify-content: center;
-}
-
-.phase-text {
-  margin-top: 70px;
-  max-width: 420px;
-  min-width: 420px;
-  text-align: left;
-}
-
-hr {
-  width: 50%;
-  height: 1px;
-  align-items: center;
-  margin: auto;
-  float: center;
-  border: 0;
-  border-top: 1px solid black;
-  padding: 0;
-  margin-top: 70px;
-}
-
-/* Animations */
-
-.image-portfolio-mockup {
-  visibility: hidden;
-  visibility: visible\9; /*For old IE browsers IE6-8 */
-}
-.image-portfolio-mockup {
-  visibility: visible;
-  animation: slide 1s;
-}
-.image-portfolio-mockup::after {
-  /* useful when its child elements are float:left; */
-  content: "";
-  display: table;
-  clear: both;
-}
 @keyframes slide {
   0% {
     opacity: 0;

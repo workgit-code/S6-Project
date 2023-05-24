@@ -1,21 +1,16 @@
 export const MenuData = [
   {
-    title: "ABOUT",
+    title: "About",
     url: "/",
     cName: "nav-links",
   },
   {
-    title: "RESUME",
-    url: "#",
-    cName: "nav-links",
-  },
-  {
-    title: "PROJECTS",
+    title: "Projects",
     url: "/projects",
     cName: "nav-links",
   },
   {
-    title: "LO's",
+    title: "Reading Guide",
     url: "#",
     cName: "nav-links",
   },

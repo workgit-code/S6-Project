@@ -10,7 +10,7 @@ import Reading from "../Images/Reading.png";
 function About() {
   return (
     <div>
-      <div className="container">
+      <div className="container main-text">
         <div>
           <h1 className="title">Digital designer & Developer</h1>
           <div className="introduction">
