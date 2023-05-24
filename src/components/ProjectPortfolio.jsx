@@ -12,6 +12,7 @@ function ProjectPortfolio() {
   const stageIdentify = useRef();
   const stageSketches = useRef();
   const stagePrototype = useRef();
+  const stageCoding = useRef();
   const stageConclusion = useRef();
   const toTop = useRef();
 
@@ -82,9 +83,15 @@ function ProjectPortfolio() {
             </li>
             <li
               className="contents-of-the-page-li"
+              onClick={() => scrollHandler(stagePrototype)}
+            >
+              5. Coding with React
+            </li>
+            <li
+              className="contents-of-the-page-li"
               onClick={() => scrollHandler(stageConclusion)}
             >
-              5. Conclusion & Reflections
+              6. Conclusion & Reflections
             </li>
           </ul>
         </div>
@@ -134,12 +141,14 @@ function ProjectPortfolio() {
           <p className="stage-explanation-text">
             As for any project, it is important to identify the target audience
             that will be interacting with the interface and to recognize what my
-            mentors are expecting to see from me as a student. My stakeholders
-            are my teachers, which brings some requirements such as - the
-            Reading guide should be easy to access and followable, the Learning
-            outcomes should be clear. What I have learned through the challenge
-            of the project, in a more User Experience aspect is that good
-            filtering and intuitive navigation is of great importance for
+            mentors are expecting to see from me as a student.
+          </p>
+          <p className="stage-explanation-text">
+            My stakeholders are my teachers, which brings some requirements such
+            as - the Reading guide should be easy to access and followable, the
+            Learning outcomes should be clear. What I have learned through the
+            challenge of the project, in a more User Experience aspect is that
+            good filtering and intuitive navigation is of great importance for
             products like portfolios, so that my projects are effortless to read
             through and have a logical storyline.
           </p>
@@ -148,18 +157,45 @@ function ProjectPortfolio() {
         <div className="text-container" ref={stageSketches}>
           <h3 className="stage-title">3. Sketches</h3>
           <p className="stage-explanation-text">
-            Here some of the initial sketches I did for the project
+            I initially conducted a few rounds of low-fidelity testing, but soon
+            transitioned to engaging in brainstorming sessions and iterating
+            with high-fidelity designs.
+          </p>
+          <p className="stage-explanation-text">
+            The testing process primarily involved my team members and teachers,
+            utilizing A/B and Brand testing methods. My brainstorming phase
+            extensively involved paper prototypes, which allowed me to explore
+            ideas quickly. Subsequently, I swiftly shifted my focus towards
+            refining the designs using high-fidelity prototypes.
           </p>
           <img src={PortfolioSketches} className="image-portfolio" />
         </div>
         <div className="text-container" ref={stagePrototype}>
           <h3 className="stage-title">4. High fi prototype</h3>
           <p className="stage-explanation-text">
-            Show iterations of the prototype
+            As evident from the Fifma file, I went through numerous iterations
+            of the High-Fidelity prototype, investing a significant amount of
+            time in refining the layout and visual aesthetics.
+          </p>
+          <p className="stage-explanation-text left-border">
+            A valuable lesson I learned during this process was not to dedicate
+            excessive time to envisioning the interface's appearance, but rather
+            to start coding as early as possible. Unforeseen imperfections often
+            emerge only during the implementation phase, and it is through
+            writing the code that they become apparent.
           </p>
         </div>
-        <div className="text-container" ref={stageConclusion}>
-          <h3 className="stage-title">5. Coding</h3>
+        <div className="text-container highlighted">
+          <p className="stage-explanation-text">
+            Here is the{" "}
+            <a href="https://www.figma.com/file/Poo1UBGXRFSVixzdZk8hZZ/Portfolio-Prototype?type=design&node-id=0-1&t=kDr7lUbRz9KocBvS-0">
+              Figma File
+            </a>{" "}
+            with my design iterations on a Hi Fi level.
+          </p>
+        </div>
+        <div className="text-container" ref={stageCoding}>
+          <h3 className="stage-title">5. Coding with React</h3>
           <p className="stage-explanation-text">
             The portfolio is built using React.js and plain CSS. I intentionally
             avoided using any libraries or packages, instead opting to construct
@@ -176,9 +212,43 @@ function ProjectPortfolio() {
           </p>
           <img src={CodeSnippetPortfolio} className="image-portfolio" />
         </div>
+        <div className="text-container highlighted">
+          <p className="stage-explanation-text">
+            If you want to further have a look at my portfolio's code,{" "}
+            <a href="https://github.com/workgit-code/Portfolio-S6">
+              here is a link
+            </a>{" "}
+            to my GitHub repository
+          </p>
+        </div>
         <div className="text-container" ref={stageConclusion}>
           <h3 className="stage-title">6. Conclusion & Reflection</h3>
-          <p className="stage-explanation-text"></p>
+          <p className="stage-explanation-text">
+            Throughout my studies at Fontys, I have been contemplating this
+            question, and not just limited to this semester. However, it was in
+            Advanced Media where I had the opportunity to truly reflect on my
+            aspirations for the future.
+          </p>
+          <p className="stage-explanation-text">
+            The type of professional I aspire to be is someone who appreciates
+            and engages in the aesthetic aspects of design. I thoroughly enjoy
+            conceptualizing and envisioning the visual appeal of various
+            elements.
+          </p>
+          <p className="stage-explanation-text">
+            Moreover, I find myself drawn to the coding side of implementation.
+            I have a genuine interest in understanding how to bring ideas to
+            life through technical means.
+          </p>
+          <p className="stage-explanation-text left-border">
+            As for a final response to the question at hand, I must admit that
+            it is a journey that I will continue to explore throughout my
+            career. However, at this moment, I consider myself a Creative
+            Designer. I derive great satisfaction from designing user interfaces
+            and experimenting with different technologies, driven by a deep
+            curiosity about their functionality and the immense power of media,
+            even on a technical level.
+          </p>
         </div>
       </div>
       {/* Scroll to Top Button */}

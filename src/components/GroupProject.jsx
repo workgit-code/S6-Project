@@ -104,7 +104,21 @@ function GroupProject() {
             user requirements
           </h3>
           <p className="stage-explanation-text">
-            The other research methos I used are described as:
+            As a group, we prioritized the equitable distribution of work on the
+            project, ensuring that each team member had their fair share of
+            responsibilities. In this discussion, I will primarily focus on
+            highlighting my individual contributions.
+          </p>
+          <p className="stage-explanation-text">
+            During the initial Sprint of the project, I collaborated with a team
+            member to conduct comprehensive Competitor research. This research
+            proved to be highly insightful as it enabled us to explore and
+            analyze the offerings provided by other prominent IT giants within
+            the company, specifically targeting the needs and requirements of
+            newly hired foreign employees.
+          </p>
+          <p className="stage-explanation-text">
+            The other research methods I used are described as:
           </p>
           <p>
             <ul className="bulletpoints">

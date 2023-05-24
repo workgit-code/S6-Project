@@ -38,7 +38,6 @@ function Projects() {
             <p className="project-description">
               How to attract & retain international employees at Simac?
             </p>
-            &#128073;
           </div>
           <div className="overview-image-content">
             <img src={GroupProjectImage} className="image-project" />
@@ -54,7 +53,9 @@ function Projects() {
         <div className="project-container">
           <div className="overview-text-content">
             <h1>Dutch design charrette</h1>
-            <p className="project-description"></p>
+            <p className="project-description">
+              Working in a group with international students for a week
+            </p>
           </div>
           <div className="overview-image-content">
             <img src={InternationaWeek} className="image-project" />
