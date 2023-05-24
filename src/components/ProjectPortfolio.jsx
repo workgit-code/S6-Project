@@ -46,6 +46,8 @@ function ProjectPortfolio() {
     };
   }, []);
 
+  // Animations:
+
   return (
     <div>
       <div className="container main-text">
@@ -83,7 +85,7 @@ function ProjectPortfolio() {
             </li>
             <li
               className="contents-of-the-page-li"
-              onClick={() => scrollHandler(stagePrototype)}
+              onClick={() => scrollHandler(stageCoding)}
             >
               5. Coding with React
             </li>

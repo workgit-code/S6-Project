@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import ProjectPortfolio from "./components/ProjectPortfolio";
 import GroupProject from "./components/GroupProject";
+import PortfolioReadingGuide from "./components/PortfolioReadingGuide";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/myportfolio" element={<ProjectPortfolio />} />
           <Route path="/groupproject" element={<GroupProject />} />
+          <Route
+            path="/portfolioreadingguide"
+            element={<PortfolioReadingGuide />}
+          />
         </Routes>
       </Router>
     </div>

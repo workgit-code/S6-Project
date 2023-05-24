@@ -11,7 +11,7 @@ export const MenuData = [
   },
   {
     title: "Reading Guide",
-    url: "#",
+    url: "/portfolioreadingguide",
     cName: "nav-links",
   },
 ];

@@ -136,7 +136,25 @@ function GroupProject() {
             by highlight prelimenary research
           </h3>
           <p className="stage-explanation-text">
-            The other research methos I used are described as:
+            We are following the Double Diamond design model, which means that
+            if the previous sprint was dedicated to diverging research data and
+            engaging in brainstorming sessions, this sprint focuses on
+            converging and filtering that data into more refined pieces. In
+            addition, this sprint emphasizes the crucial steps of Defining and
+            Empathizing with the target audience. As a result of this process,
+            we have achieved a clearer problem statement and gained insights
+            into our target audience.
+          </p>
+          <p className="stage-explanation-text left-border">
+            Notably, we discovered that many employees at Simac are unaware of
+            who their coaches are. Furthermore, there is a strong emphasis on
+            individual and career growth among the majority of employees. We
+            also found that there is a high level of interest among employees in
+            participating in more team-bonding events.
+          </p>
+          <p className="stage-explanation-text">
+            Personally, my focus during this phase was on defining the User
+            Requirements and conducting thorough analysis of the Interviews.
           </p>
 
           <ul className="bulletpoints">
