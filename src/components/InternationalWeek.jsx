@@ -22,26 +22,22 @@ function InternationalWeek() {
           <ul className="contents-of-the-page">
             <li
               className="contents-of-the-page-li"
-              onClick={() => scrollHandler(sprintOne)}
             >
               1. Empathize: Identifying target audience and Empathizing with the
               user
             </li>
             <li
               className="contents-of-the-page-li"
-              onClick={() => scrollHandler(sprintTwo)}
             >
               2. Define: What is the problem and what are we trying to solve
             </li>
             <li
               className="contents-of-the-page-li"
-              onClick={() => scrollHandler(sprintThree)}
             >
               3. Ideate: Coming up solutions, Brainstorming
             </li>
             <li
               className="contents-of-the-page-li"
-              onClick={() => scrollHandler(sprintThree)}
             >
               4. Prototype
             </li>
