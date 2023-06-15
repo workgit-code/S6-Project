@@ -328,6 +328,22 @@ function GroupProject() {
           <h3 className="stage-title">
             Conclusion: Project Summary and Retrospective
           </h3>
+          <p className="stage-explanation-text">
+            To enhance the onboarding process for international professionals at
+            Simac.nl, we conducted thorough research, defined user requirements,
+            and developed a concept called "SIMAC IN."
+          </p>
+          <p className="stage-explanation-text left-border">
+            The assignment’s scope gave us a great range of onboarding
+            activities that we can discover, however we sticked to one “hook” as
+            we call it: <strong>socializing</strong>.
+          </p>
+          <p className="stage-explanation-text">
+            Through collaborative efforts and iterative design, we created a
+            user-friendly app that fosters communication and socialization. Our
+            solution aims to streamline the onboarding experience and support
+            international professionals in their transition at Simac.nl.
+          </p>
         </div>
       </div>
     </div>

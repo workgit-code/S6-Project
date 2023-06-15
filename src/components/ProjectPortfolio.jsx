@@ -197,7 +197,7 @@ function ProjectPortfolio() {
             interaction (execution & validation):
           </h3>
           <p className="stage-explanation-text">
-            As evident from the Fifma file, I went through numerous iterations
+            As evident from the Figma file, I went through numerous iterations
             of the High-Fidelity prototype, investing a significant amount of
             time in refining the layout and visual aesthetics.
           </p>
@@ -256,7 +256,6 @@ function ProjectPortfolio() {
         </div>
         <div className="text-container" ref={stageConclusion}>
           <h3 className="stage-title">6. Conclusion & Reflection</h3>
-
           <h3 className="learning-outcomes">
             <span class="fire html-1">🔥</span> Learning outcome 6: Personal
             leadership,

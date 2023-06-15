@@ -20,27 +20,17 @@ function InternationalWeek() {
           <img src={InternationalWeekColorful} className="image-portfolio" />
           <h3 className="contents-headline">CONTENTS OF THIS READ:</h3>
           <ul className="contents-of-the-page">
-            <li
-              className="contents-of-the-page-li"
-            >
+            <li className="contents-of-the-page-li">
               1. Empathize: Identifying target audience and Empathizing with the
               user
             </li>
-            <li
-              className="contents-of-the-page-li"
-            >
+            <li className="contents-of-the-page-li">
               2. Define: What is the problem and what are we trying to solve
             </li>
-            <li
-              className="contents-of-the-page-li"
-            >
+            <li className="contents-of-the-page-li">
               3. Ideate: Coming up solutions, Brainstorming
             </li>
-            <li
-              className="contents-of-the-page-li"
-            >
-              4. Prototype
-            </li>
+            <li className="contents-of-the-page-li">4. Prototype</li>
           </ul>
         </div>
         <div className="text-container researchQuestion">
@@ -55,6 +45,14 @@ function InternationalWeek() {
           <h3 className="stage-title">
             1. Empathize: Identifying target audience and Empathizing with the
             user
+          </h3>
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 1: User
+            interaction (analysis & advice),
+          </h3>
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 7:
+            Goal-oriented interaction:
           </h3>
           <p className="stage-explanation-text">
             We had an enjoyable and thrilling week working with a diverse group
@@ -83,6 +81,11 @@ function InternationalWeek() {
             at. This can be challenging since students from various courses are
             situated in the same open space.
           </p>
+
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 4:
+            Future-oriented organisation:
+          </h3>
           <p className="stage-explanation-text left-border">
             Wandering around working students/ teachers to find your team can be
             awkward and inconvenient.
@@ -92,6 +95,11 @@ function InternationalWeek() {
             template.
           </p>
           <img src={PointOfView} className="image-portfolio" />
+
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 5:
+            Investigative problem solving:
+          </h3>
           <p className="stage-explanation-text">
             Some of the questions we asked ourselves were:
           </p>
@@ -137,6 +145,30 @@ function InternationalWeek() {
         {/* STAGE 4 */}
         <div className="text-container">
           <h3 className="stage-title">4. Prototype</h3>
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 2: User
+            interaction (execution & validation):
+          </h3>
+          <div className="text-container highlighted">
+            <p className="stage-explanation-text">
+              <strong>THE CONCEPT - </strong> The concept revolves around an
+              empathetic building that utilizes AI to recognize your face and
+              promptly match you with your class. Upon entering TQ, a screen
+              greets you by name and guides you to your class area by indicating
+              a designated color-coded path. These dynamic paths, labeled with
+              colors, serve as a "smart floor" guiding you to the appropriate
+              location within the building.
+            </p>
+          </div>
+          <p className="stage-explanation-text">
+            The unfinished aspect of the concept involves the building notifying
+            you in advance about scheduled meetings and even playing pleasant
+            music when you begin working on a solo project.
+          </p>
+          <p className="stage-explanation-text left-border">
+            This idea aligns with the fourth Sustainable Development Goal:
+            <strong> Quality Education</strong>.
+          </p>
           <img src={BuildingPrototype} className="image-portfolio" />
         </div>
         {/* STAGE 5 */}
@@ -146,7 +178,31 @@ function InternationalWeek() {
             Conclusion: How did the project change my perpective of view as a
             designer
           </h3>
-          <p className="stage-explanation-text"> Helicopter view</p>
+
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 7:
+            Goal-oriented interaction:
+          </h3>
+          <p className="stage-explanation-text">
+            {" "}
+            Although it was a challenging project, I thoroughly enjoyed each day
+            of it as it provided opportunities to learn about people and explore
+            the world of design. This experience encouraged me to embrace more
+            daring concepts and think "outside the box."
+          </p>
+          <p className="stage-explanation-text">
+            Collaborating with building architects, graphic designers, and other
+            media design students exposed me to their perspectives and working
+            methods, enriching my own creative approach.
+          </p>
+          <p className="stage-explanation-text left-border">
+            {" "}
+            The most significant lesson I took away from this project is the
+            importance of not conforming to traditional norms or blindly
+            following design trends. Instead, I learned to create something
+            unique, simple, and impactful that genuinely solves real-life
+            problems for individuals.
+          </p>
         </div>
       </div>
     </div>
