@@ -47,7 +47,7 @@ function Projects() {
 
       {/* THIRD PROJECT */}
       <Link
-        to="/myportfolio"
+        to="/internationalweek"
         style={{ color: "inherit", textDecoration: "none" }}
       >
         <div className="project-container">

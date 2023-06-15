@@ -1,0 +1,59 @@
+.research-question {
+  background-color: aliceblue;
+}
+
+.learning-outcomes {
+  margin: 0 2rem;
+  margin-bottom: 20px;
+  text-align: left !important;
+  background-color: aliceblue;
+}
+
+.image-portfolio {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.text-container.highlighted {
+  background-color: aliceblue;
+  border-radius: 15px;
+  margin: 0 2rem;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.text-container.researchQuestion {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.stage-title {
+  font-size: 27px;
+  margin: 0 2rem;
+  margin-bottom: 40px;
+  text-align: left !important;
+}
+
+.lo-chips {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+  margin-top: -15px;
+  margin-bottom: 40px;
+  text-align: left !important;
+}
+
+.lo-chips p {
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  word-break: break-word;
+  margin-right: 2%;
+  font-size: 0.8em;
+}
+
+.bulletpoints {
+  margin-bottom: 20px;
+}

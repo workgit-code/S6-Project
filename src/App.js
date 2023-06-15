@@ -7,6 +7,7 @@ import About from "./components/About";
 import ProjectPortfolio from "./components/ProjectPortfolio";
 import GroupProject from "./components/GroupProject";
 import PortfolioReadingGuide from "./components/PortfolioReadingGuide";
+import InternationalWeek from "./components/InternationalWeek";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/myportfolio" element={<ProjectPortfolio />} />
           <Route path="/groupproject" element={<GroupProject />} />
+          <Route path="/internationalweek" element={<InternationalWeek />} />
           <Route
             path="/portfolioreadingguide"
             element={<PortfolioReadingGuide />}

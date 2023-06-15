@@ -39,6 +39,25 @@
   text-align: left !important;
 }
 
+.listing-learning-outcomes {
+  /* margin: 0 2rem; */
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  text-align: left;
+  list-style-type: none;
+  text-align: left !important;
+}
+
+.learning-outcome-li {
+  background-color: grey;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 0.7em; /* 14px/16=0.875em */
+  width: 100%;
+  display: inline-block;
+}
+
 .stage-explanation-text {
   text-align: justify;
   margin: 0 2rem;
@@ -55,6 +74,7 @@
 
 .image-portfolio {
   margin-top: 40px;
+  margin-bottom: 40px;
   width: 100%;
   height: auto;
   margin: 0 2rem;

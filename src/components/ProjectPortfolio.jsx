@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "font-awesome/css/font-awesome.min.css";
 import "../stylesheets/ProjetcPortfolio.css";
+import "../stylesheets/GroupProject.css";
 import PortfolioHighFi from "../Images/PortfolioHighFi.png";
 import PortfolioMockup from "../Images/PortfolioMockup.png";
 import PortfolioSketches from "../Images/PortfolioSketches.jpg";
@@ -97,11 +98,12 @@ function ProjectPortfolio() {
             </li>
           </ul>
         </div>
-        <div className="text-container highlighted">
-          <p className="stage-explanation-text">
+        <div className="text-container researchQuestion">
+          <h3> Research question:</h3>
+          <h1 className="research-question">
             "How can I design a portfolio in a way that will express the kind of
             IT Professional, I aim to become?"
-          </p>
+          </h1>
         </div>
         <div className="text-container highlighted">
           <p className="stage-explanation-text">
@@ -119,6 +121,10 @@ function ProjectPortfolio() {
             some time to do an online research through famous platforms for
             design inspirations such as Awwards, Dribble etc.
           </p>
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span>Learning outcome 5: Investigative
+            problem solving:
+          </h3>
           <p className="stage-explanation-text">
             The other research methos I used are described as:
           </p>
@@ -129,6 +135,11 @@ function ProjectPortfolio() {
               <li className="list-item">Best good and bad practices</li>
             </ul>
           </p>
+
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 1: User
+            interaction (analysis & advice):
+          </h3>
           <p className="stage-explanation-text left-border">
             <strong>Some results are</strong> - there is a great variety of
             designs and creative storytelling techniques that inspired me
@@ -140,11 +151,17 @@ function ProjectPortfolio() {
         </div>
         <div className="text-container" ref={stageIdentify}>
           <h3 className="stage-title">2. Identifying target readers</h3>
+
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 7:
+            Goal-oriented interaction:
+          </h3>
           <p className="stage-explanation-text">
             As for any project, it is important to identify the target audience
             that will be interacting with the interface and to recognize what my
             mentors are expecting to see from me as a student.
           </p>
+
           <p className="stage-explanation-text">
             My stakeholders are my teachers, which brings some requirements such
             as - the Reading guide should be easy to access and followable, the
@@ -174,11 +191,20 @@ function ProjectPortfolio() {
         </div>
         <div className="text-container" ref={stagePrototype}>
           <h3 className="stage-title">4. High fi prototype</h3>
+
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 2: User
+            interaction (execution & validation):
+          </h3>
           <p className="stage-explanation-text">
             As evident from the Fifma file, I went through numerous iterations
             of the High-Fidelity prototype, investing a significant amount of
             time in refining the layout and visual aesthetics.
           </p>
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 1: User
+            interaction (analysis & advice):
+          </h3>
           <p className="stage-explanation-text left-border">
             A valuable lesson I learned during this process was not to dedicate
             excessive time to envisioning the interface's appearance, but rather
@@ -198,6 +224,11 @@ function ProjectPortfolio() {
         </div>
         <div className="text-container" ref={stageCoding}>
           <h3 className="stage-title">5. Coding with React</h3>
+
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 3: Software
+            design:
+          </h3>
           <p className="stage-explanation-text">
             The portfolio is built using React.js and plain CSS. I intentionally
             avoided using any libraries or packages, instead opting to construct
@@ -225,6 +256,15 @@ function ProjectPortfolio() {
         </div>
         <div className="text-container" ref={stageConclusion}>
           <h3 className="stage-title">6. Conclusion & Reflection</h3>
+
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 6: Personal
+            leadership,
+          </h3>
+          <h3 className="learning-outcomes">
+            <span class="fire html-1">🔥</span> Learning outcome 7:
+            Goal-oriented interaction:
+          </h3>
           <p className="stage-explanation-text">
             Throughout my studies at Fontys, I have been contemplating this
             question, and not just limited to this semester. However, it was in
