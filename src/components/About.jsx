@@ -10,7 +10,7 @@ function About() {
         <div>
           <h1 className="title">Digital designer & Developer</h1>
           <div className="introduction">
-            <img src={ProfileImage} className="profile-image" />
+            <img src={ProfileImage} className="profile-image about" />
             <h1 className="title">Sesil M. Tasim</h1>
             {/* <i class="fa fa-regular fa-arrow-down fa-2x "></i> */}
           </div>

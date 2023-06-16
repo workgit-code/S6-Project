@@ -15,10 +15,10 @@
   gap: 20px;
 }
 
-.profile-image {
+.profile-image.about {
   /* width: 500px; */
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
   object-position: 50% 50%;
   margin-top: 20px;

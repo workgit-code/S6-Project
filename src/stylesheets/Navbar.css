@@ -1,14 +1,4 @@
 .NavbarItems {
-  /* display: flex;
-  align-items: right;
-  text-align: right;
-  justify-content: right;
-  height: 60px;
-  border-radius: 70px;
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translate(-50%); */
   display: flex;
   justify-content: flex-end;
   z-index: 999;
@@ -39,9 +29,6 @@
   padding-right: 170px;
   padding-left: 170px;
   list-style: none;
-  /* align-items: center;
-  text-align: center;
-  justify-content: center; */
   display: flex;
   justify-content: flex-end;
 }
