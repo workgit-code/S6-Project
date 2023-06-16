@@ -15,10 +15,9 @@ function GroupProject() {
   const sprintOne = useRef();
   const sprintTwo = useRef();
   const sprintThree = useRef();
-
-  // const sprintFour = useRef();
-  // const sprintFive = useRef();
-  // const conclusions = useRef();
+  const sprintFour = useRef();
+  const conclusions = useRef();
+  const toTop = useRef();
 
   // Scroll to a specific section
   const scrollHandler = (elmRef) => {
@@ -83,9 +82,15 @@ function GroupProject() {
             </li>
             <li
               className="contents-of-the-page-li"
-              onClick={() => scrollHandler(sprintThree)}
+              onClick={() => scrollHandler(sprintFour)}
             >
               Sprint 4 - High Fidelity implimentation + Testing
+            </li>
+            <li
+              className="contents-of-the-page-li"
+              onClick={() => scrollHandler(conclusions)}
+            >
+              Conclusion: Project Summary and Retrospective
             </li>
           </ul>
         </div>
@@ -289,7 +294,7 @@ function GroupProject() {
           <img src={SimacLowFiPrototype} className="image-portfolio" />
         </div>
         {/* STAGE 4 */}
-        <div className="text-container" ref={sprintThree}>
+        <div className="text-container" ref={sprintFour}>
           <h3 className="stage-title">
             Sprint 4 - High Fidelity implimentation + Testing
           </h3>
@@ -324,7 +329,7 @@ function GroupProject() {
           </div>
         </div>
         {/* STAGE 5 - CONCLUSION */}
-        <div className="text-container" ref={sprintThree}>
+        <div className="text-container" ref={conclusions}>
           <h3 className="stage-title">
             Conclusion: Project Summary and Retrospective
           </h3>
@@ -345,6 +350,13 @@ function GroupProject() {
             international professionals in their transition at Simac.nl.
           </p>
         </div>
+      </div>
+      {/* Scroll to Top Button */}
+      <div
+        className={`goToTopButton ${show ? "show" : ""}`}
+        onClick={() => scrollToTop(toTop)}
+      >
+        {show && <h2> TO TOP</h2>}
       </div>
     </div>
   );

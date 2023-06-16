@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../stylesheets/ProjetcPortfolio.css";
 import "../stylesheets/GroupProject.css";
 import InternationalWeekColorful from "../Images/InternationalWeekColorful.png";
-import DesignThinkingFiveSteps from "../Images/DesignThinkingFiveSteps.png";
 import PointOfView from "../Images/PointOfView.png";
 import Persona from "../Images/Persona.png";
 import EmpathyMap from "../Images/EmpathyMap.png";
@@ -10,6 +9,44 @@ import BuildingPrototype from "../Images/BuildingPrototype.jpg";
 import Brainstorming from "../Images/Brainstorming.png";
 
 function InternationalWeek() {
+  // Refs for section elements
+  const empathise = useRef();
+  const define = useRef();
+  const ideate = useRef();
+  const prototype = useRef();
+  const conclusion = useRef();
+  const toTop = useRef();
+
+  // Scroll to a specific section
+  const scrollHandler = (elmRef) => {
+    console.log(elmRef.current);
+    window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
+  };
+
+  // Scroll to the top of the page
+  const scrollToTop = (elmRef) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // State for showing the "Scroll to Top" button
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <div className="container main-text">
@@ -20,17 +57,38 @@ function InternationalWeek() {
           <img src={InternationalWeekColorful} className="image-portfolio" />
           <h3 className="contents-headline">CONTENTS OF THIS READ:</h3>
           <ul className="contents-of-the-page">
-            <li className="contents-of-the-page-li">
+            <li
+              className="contents-of-the-page-li"
+              onClick={() => scrollHandler(empathise)}
+            >
               1. Empathize: Identifying target audience and Empathizing with the
               user
             </li>
-            <li className="contents-of-the-page-li">
+            <li
+              className="contents-of-the-page-li"
+              onClick={() => scrollHandler(define)}
+            >
               2. Define: What is the problem and what are we trying to solve
             </li>
-            <li className="contents-of-the-page-li">
+            <li
+              className="contents-of-the-page-li"
+              onClick={() => scrollHandler(ideate)}
+            >
               3. Ideate: Coming up solutions, Brainstorming
             </li>
-            <li className="contents-of-the-page-li">4. Prototype</li>
+            <li
+              className="contents-of-the-page-li"
+              onClick={() => scrollHandler(prototype)}
+            >
+              4. Prototype
+            </li>
+            <li
+              className="contents-of-the-page-li"
+              onClick={() => scrollHandler(conclusion)}
+            >
+              Conclusion: How did the project change my perpective of view as a
+              designer
+            </li>
           </ul>
         </div>
         <div className="text-container researchQuestion">
@@ -41,7 +99,7 @@ function InternationalWeek() {
           </h1>
         </div>
         {/* STAEG 1 */}
-        <div className="text-container">
+        <div className="text-container" ref={empathise}>
           <h3 className="stage-title">
             1. Empathize: Identifying target audience and Empathizing with the
             user
@@ -68,7 +126,7 @@ function InternationalWeek() {
           <img src={EmpathyMap} className="image-portfolio" />
         </div>
         {/* STAGE 2 */}
-        <div className="text-container">
+        <div className="text-container" ref={define}>
           <h3 className="stage-title">
             2. Define: What is the problem and what are we trying to solve
           </h3>
@@ -126,7 +184,7 @@ function InternationalWeek() {
           </p>
         </div>
         {/* STAGE 3 */}
-        <div className="text-container">
+        <div className="text-container" ref={ideate}>
           <h3 className="stage-title">
             3. Ideate: Coming up solutions, Brainstorming
           </h3>
@@ -143,7 +201,7 @@ function InternationalWeek() {
           </p>
         </div>
         {/* STAGE 4 */}
-        <div className="text-container">
+        <div className="text-container" ref={prototype}>
           <h3 className="stage-title">4. Prototype</h3>
           <h3 className="learning-outcomes">
             <span class="fire html-1">🔥</span> Learning outcome 2: User
@@ -172,7 +230,7 @@ function InternationalWeek() {
           <img src={BuildingPrototype} className="image-portfolio" />
         </div>
         {/* STAGE 5 */}
-        <div className="text-container">
+        <div className="text-container" ref={conclusion}>
           <h3 className="stage-title">
             {" "}
             Conclusion: How did the project change my perpective of view as a
@@ -204,6 +262,13 @@ function InternationalWeek() {
             problems for individuals.
           </p>
         </div>
+      </div>
+      {/* Scroll to Top Button */}
+      <div
+        className={`goToTopButton ${show ? "show" : ""}`}
+        onClick={() => scrollToTop(toTop)}
+      >
+        {show && <h2> TO TOP</h2>}
       </div>
     </div>
   );

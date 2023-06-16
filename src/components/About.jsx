@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import "font-awesome/css/font-awesome.min.css";
 import "../stylesheets/About.css";
 import ProfileImage from "../Images/ProfileImage.JPG";
-import Drawing from "../Images/Drawing.png";
-import Movies from "../Images/Movies.png";
-import Cooking from "../Images/Cooking.png";
-import Reading from "../Images/Reading.png";
 
 function About() {
   return (
@@ -19,7 +15,7 @@ function About() {
             {/* <i class="fa fa-regular fa-arrow-down fa-2x "></i> */}
           </div>
         </div>
-        <div className="my-services-container">
+        {/* <div className="my-services-container">
           <h1 className="">My services</h1>
 
           <div className="my-services-text-container">
@@ -54,62 +50,7 @@ function About() {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="in-my-free-time-container">
-          <h1 className="in-my-free-time-title ">In my free time</h1>
-          <div className="more-about-container">
-            <div className="more-about-me"></div>
-          </div>
-
-          {/* ************************************************* */}
-
-          <div>
-            <div className="gallery">
-              <img src={Drawing} alt="Cinque Terre" width="600" height="400" />
-              <div className="desc">
-                <p>
-                  I love putting on some nice music, sipping a cup of warm tea,
-                  and drawing.
-                </p>
-              </div>
-            </div>
-
-            <div className="gallery">
-              <img src={Movies} alt="Forest" width="600" height="400" />
-              <div className="desc">
-                {" "}
-                <p>
-                  Having movie nights with my friends and watching Disney movies
-                  is also one of my favorite activities.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="gallery">
-            <img src={Cooking} alt="Northern Lights" width="600" height="400" />
-            <div className="desc">
-              {" "}
-              <p>
-                Passion for cooking runs deep into the roots of my family,
-                naturally, I love spending extra time in the kitchen on the
-                weekend.
-              </p>
-            </div>
-          </div>
-
-          <div className="gallery">
-            <img src={Reading} alt="Mountains" width="600" height="400" />
-            <div className="desc">
-              {" "}
-              <p className="my-services-text">
-                From a young age, I am fond of literature and reading to expand
-                my imagination with some good books.
-              </p>
-            </div>
-          </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

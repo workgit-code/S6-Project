@@ -47,8 +47,6 @@ function ProjectPortfolio() {
     };
   }, []);
 
-  // Animations:
-
   return (
     <div>
       <div className="container main-text">
@@ -101,8 +99,8 @@ function ProjectPortfolio() {
         <div className="text-container researchQuestion">
           <h3> Research question:</h3>
           <h1 className="research-question">
-            "How can I design a portfolio in a way that will express the kind of
-            IT Professional, I aim to become?"
+            How can I design a portfolio in a way that will express the kind of
+            IT Professional, I aim to become?
           </h1>
         </div>
         <div className="text-container highlighted">
