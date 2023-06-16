@@ -4,7 +4,7 @@ function PortfolioReadingGuide() {
   return (
     <div>
       <iframe
-        src="/pdf/PortfolioReadingGuide.pdf"
+        src="/pdf/ReadingGuide.pdf"
         title="Embedded PDF"
         width="100%"
         height="900px"
